@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --white: #fff;
+    --gris: #6c757d;
+    --gris-oscuro: #343a40;
+    --ocre: #bf946f;
+    --fuente:'Roboto', sans-serif; ;
+}
+
+h1, h2, h3, h4, h5, p, a{
+    font-family: var(--fuente);
+}
+
+/***INCIO NAV ***/
+.div-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#marcaNav{
+    padding: 0;
+    margin-top: 6px;
+    font-weight: 300;
+} 
+
+img.logo-nav{
+    width: 65px;
+    height: 65px; 
+}
+/*** FIN NAV ***/
+/*** INICIO PORTADA ***/
+.section-portada{
+    background-image: url(img/ddl.png);
+    width: 80%;
+    height: 80%;
+    background-color: rgb(100, 100, 100);
+    background-blend-mode: soft-light;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 30px;    
+    margin:0 43px;
+}
+.section-portada__p{
+    font-weight: 400;
+    font-size: x-large;
+    text-align: center;
+    color: var(--white);
+
+}
+/*** FIN PORTADA ***/
+
+/*** INICIO SECTION PRODUCTOS ***/
+.productos{
+    text-transform: uppercase;
+    margin-top: 10px;
+    text-align: center;
+}
+/*** FIN SECTION PRODUCTOS ***/
+
+/*** INICIO ASIDE ***/
+.aside{
+    background-color: var(--gris-oscuro);
+    color: var(--white);
+    padding-bottom: 10px;
+    margin-top: 50px; 
+    font-weight: 100;
+}
+.aside__class--h4{
+    color: var(--ocre);
+}
+.redes-sociales{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.redes-sociales__texto{
+    color: var(--ocre);
+}
+.redes-sociales__logo{
+    margin-top: 7px;
+    border-color: var(--white);
+    text-decoration: none;
+}
+/*** FIN ASIDE ***/
+
+
+/*** INICIO FOOTER ***/
+.footer{
+    background-color: var(--gris-oscuro);
+    color: var(--white);
+    font-weight: 100;
+    text-align: center;
+}
+.footer__p--fzangla{
+    text-decoration: none;
+}
+
+/*** FIN FOOTER ***/
