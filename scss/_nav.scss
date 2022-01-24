@@ -1,0 +1,35 @@
+$white: #fff;
+$grey: #6c757d;
+$darkGrey: #343a40;
+$ocher: #bf946f;
+$black: #000;
+$titleFont:'Bebas Neue', cursive;
+$textFont: 'Roboto', sans-serif;
+
+
+
+/***INCIO NAV ***/
+.marca{
+    text-decoration: none;
+}
+#marcaNav {
+    padding-left: 10px;
+    margin: 6px 15px 6px 3px;
+    font-size: 30pt;
+    color: $ocher;
+} 
+.nav-item{
+    font-size: 17pt;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-height{
+        padding: 5px;   
+    }
+    #marcaNav {
+        margin-top: 6px;
+    }
+}
+
+/*** FIN NAV ***/
+

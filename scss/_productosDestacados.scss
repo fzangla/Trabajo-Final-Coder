@@ -1,0 +1,49 @@
+
+$white: #fff;
+$grey: #6c757d;
+$darkGrey: #343a40;
+$ocher: #bf946f;
+$black: #000;
+$titleFont:'Bebas Neue', cursive;
+$textFont: 'Roboto', sans-serif;
+
+
+/*** INICIO PRODUCTOS DESTACADOS ***/
+.title-products{
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 40px;
+}
+.container-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card{
+    margin-top: 20px;
+    transition: .3s;
+    position: relative;
+    margin: 5px;
+    max-width: 300px;
+    max-height: 500px;
+
+}
+
+div.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 15px 15px 30px rgba(0,0,0,0.8);
+}
+@media screen and (max-width: 768px){
+    .container-cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .slide-bk img{
+        max-height: 300px;
+    }
+}
+
+/*** FIN PRODUCTOS DESTACADOS ***/

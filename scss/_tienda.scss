@@ -1,0 +1,93 @@
+$white: #fff;
+$grey: #6c757d;
+$darkGrey: #343a40;
+$ocher: #bf946f;
+$black: #000;
+$titleFont:'Bebas Neue', cursive;
+$textFont: 'Roboto', sans-serif;
+
+
+/* INICIO TIENDA*/
+.store-photo{
+    width: 100%;
+    opacity: 0.6;
+    position: relative;
+}
+.title-product{
+    margin-top: 20px;
+}
+.contenedor-tienda{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+}
+
+figure{
+    position: relative;
+    max-width: 300px;
+    max-height: 500px;
+    overflow: hidden;
+    border-radius: 6px;
+    cursor: pointer;
+}
+figure .card{
+        margin: 25px
+}
+figure img{
+    max-width: 300px;
+    max-height: 500px;
+    transition: all 300ms ease-in-out;
+}
+
+.hov{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,1,0.5);
+    transition: all 500ms ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.contenedor-tienda figure:hover .hov{
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedor-tienda figure:hover .hov h3{
+    margin-top: 30px;
+}
+
+.contenedor-tienda figure:hover  img{
+    transform: scale(1.1);
+}
+.contenedor-tienda figure .hov h3{
+    color: $ocher;
+    font-weight: 700;
+    transition: all 300ms ease-in-out;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+@media screen and (min-width:1024px) {
+    .contenedor-tienda{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+    }
+    .title-product{
+        font-size: 35pt;
+    }
+}
+@media screen and (max-width:768px) {
+    .contenedor-tienda{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+}
+/*** FIN TIENDA ***/

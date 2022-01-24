@@ -1,0 +1,84 @@
+$white: #fff;
+$grey: #6c757d;
+$darkGrey: #343a40;
+$ocher: #bf946f;
+$black: #000;
+$titleFont:'Bebas Neue', cursive;
+$textFont: 'Roboto', sans-serif;
+
+
+/*** INICIO NOSOTROS ***/
+
+.contact-photo{
+    width: 100%;
+    opacity: 0.3;
+    position: relative;
+}
+.text-contact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;    
+    padding-top: 5px;
+}
+.text-contact p{
+    font-size: 10pt;
+}
+@media (min-width: 768px){
+    .text-contact{   
+        padding-top: 15px;
+    }
+    .text-contact p{
+        font-size: 15pt;
+    }
+}
+.all-form{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    place-items: center;
+}
+.form-contact{
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 15px 15px 30px rgba(0,0,0,0.8);
+    border: 1px solid $darkGrey;
+    border-radius: 7px;
+}
+
+.contact{
+    padding: 25px;
+}
+
+.contact label, .contact input, .contact textarea, .contact button{
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+}
+.contact label{
+    font-weight: 700;
+}
+
+.contact input, .contact textarea{
+    border: none;
+    border-bottom: 2px solid $ocher;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: $black;
+}
+
+.contact textarea{
+    min-height: 100px;
+}
+.submit{
+    padding: 5px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: $ocher;
+    color: $white;
+    cursor: pointer;
+    font-size: 17pt;
+}
+
+/*** FIN NOSOTROS ***/

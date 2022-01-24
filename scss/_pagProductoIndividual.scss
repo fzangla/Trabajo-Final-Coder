@@ -1,0 +1,67 @@
+$white: #fff;
+$grey: #6c757d;
+$darkGrey: #343a40;
+$ocher: #bf946f;
+$black: #000;
+$titleFont:'Bebas Neue', cursive;
+$textFont: 'Roboto', sans-serif;
+
+
+/*** INICIO PAG PRODUCTOS INDIVIDUAL ***/
+.container-product{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    place-items: center;
+}
+.img-product{
+    margin: 10px 5px;
+    max-width: 300px;
+    max-height: 500px;
+    border-radius: 7px;
+}
+.title-product{
+    padding: 20px;
+    font-size: 25pt;
+    text-align: center;
+}
+.text-product{
+    margin: 0 15px;
+    text-align: justify;
+}
+.paragraph2{
+    font-weight: 700;
+}
+
+@media (min-width: 1024px){    
+    .container-product{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        margin: 0 10%;
+    }
+    .title-product{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .img-product{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .text-product{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .paragraph1, .paragraph2, .paragraph3{
+        font-size: 15pt;
+    }
+}
+
+
+/*** FIN PAG PRODUCTOS INDIVIDUAL ***/

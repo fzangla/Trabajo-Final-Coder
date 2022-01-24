@@ -1,0 +1,88 @@
+
+$white: #fff;
+$grey: #6c757d;
+$darkGrey: #343a40;
+$ocher: #bf946f;
+$black: #000;
+$titleFont:'Bebas Neue', cursive;
+$textFont: 'Roboto', sans-serif;
+
+/*** INICIO ASIDE ***/
+
+.aside {
+    background-color: $darkGrey;
+    padding-bottom: 10px;
+    margin-top: 50px;
+    padding-top: 20px;
+    font-weight: 300;
+    font-size: 10pt;
+
+}
+@media (max-width: 800px){ 
+    .aside{
+        padding: 10px;
+    }
+}
+
+.aside__div--h4 {
+    color: $ocher;
+    font-weight: $titleFont;
+    font-size: 17pt;
+}
+.aside__div--p{
+    color: $white;
+    margin-right: 15px;
+}
+.redes-sociales {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.redes-sociales__texto {
+    color: $ocher;
+    font-size: 17pt;
+}
+
+.redes-sociales__logo {
+    margin-top: 7px;
+    text-decoration: none;
+    color:$white;
+}
+@media screen and (min-width: 768px){
+    .aside{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        align-items:start;
+        justify-items: center;
+        justify-content: space-around;
+        padding: 15px 15px;
+        
+    }
+}
+.aside__class--h4{
+    font-size: 15pt;
+}
+.redes-sociales{
+    background-color:$darkGrey;
+    display: flex;
+    justify-items: center;        
+}
+.logos-redes{
+    color: $white;
+    background-color:$darkGrey;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+}       
+#logoIg{
+    padding: 0 15px;
+    
+}
+#logoFb{
+    padding: 0 15px;
+}
+
+/*** FIN ASIDE ***/
+

@@ -1,0 +1,28 @@
+@import "nav";
+@import "carousel";
+@import "productosDestacados";
+@import "aside"; 
+@import "footer"; 
+@import "pagProductoIndividual";
+@import "tienda";
+@import "nosotros";
+
+$white: #fff;
+$grey: #6c757d;
+$darkGrey: #343a40;
+$ocher: #bf946f;
+$black: #000;
+$titleFont:'Bebas Neue', cursive;
+$textFont: 'Roboto', sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,a,button {
+    font-family: $titleFont;
+}
+p {
+    font-family: $textFont;
+    color: $black;
+}

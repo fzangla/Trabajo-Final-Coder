@@ -1,0 +1,55 @@
+
+$white: #fff;
+$grey: #6c757d;
+$darkGrey: #343a40;
+$ocher: #bf946f;
+$black: #000;
+$titleFont:'Bebas Neue', cursive;
+$textFont: 'Roboto', sans-serif;
+
+
+/*** INICIO FOOTER ***/
+
+.footer {
+    background-color:$darkGrey;
+    font-weight: 100;
+    font-size: 10pt;
+    padding-top: 10px;
+}
+
+.fzangla {
+    text-decoration: none;
+    color:$ocher;
+}
+
+@media screen and (min-width: 768px) {
+    .footer{
+        display: flex;
+        justify-content: space-around;
+    }
+    p{
+        font-size: 11pt;
+    }
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .footer__desarrollador{
+        margin-right: 180px;
+    }
+    .footer__empresa{
+        margin-left:60px;
+    }
+
+}
+.footer__p{
+    color: $white;
+    text-align: center;
+}
+.footer__desarrollador{
+    padding-bottom: 15px;
+}
+
+/** FIN FOOTER **/
+
